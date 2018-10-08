@@ -1,0 +1,103 @@
+/* styles de base si JS est activé */
+form {
+    width: 225px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    margin: 5px 0 2em;
+    color: #1ABC9C;
+}
+
+.input-file-container {
+    position: relative;
+    width: 225px;
+    margin-bottom: 20px;
+}
+.input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+.input-file {
+    position: absolute;
+    top: 0; left: 0;
+    width: 225px;
+    padding: 14px 0;
+    opacity: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* quelques styles d'interactions */
+.input-file:hover + .input-file-trigger,
+.input-file:focus + .input-file-trigger,
+.input-file-trigger:hover,
+.input-file-trigger:focus {
+    background: #34495E;
+    color: #39D2B4;
+}
+
+/* styles du retour visuel */
+.file-return {
+    margin: 0;
+}
+.file-return:not(:empty) {
+    margin: 1em 0;
+}
+.file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+}
+/* on complète l'information d'un contenu textuel
+    uniquement lorsque le paragraphe n'est pas vide */
+.file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
+}
+
+.button-contenent {
+    width: auto;
+}
+
+.btn-primary {
+    margin-right: 15px;
+}
+
+.btn {
+    background: #39D2B4;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    width: 180px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#responseText {
+    text-align: left;
+}
+
+.copy {
+    margin-top: 2em;
+}
+
+.txtcenter {
+    margin-top: 4em;
+    font-size: .9em;
+    text-align: center;
+    color: #aaa;
+}
+
+.response-text {
+    width: 560px;
+    margin: auto;
+}

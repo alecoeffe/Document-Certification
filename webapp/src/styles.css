@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+h1, h2 {
+    margin-bottom: 5px;
+    font-weight: normal;
+    text-align: center;
+    color: #aaa;
+}
+
+body {
+    font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+    color: #7F8C9A;
+    background: #FCFDFD;
+}

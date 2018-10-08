@@ -1,0 +1,25 @@
+<h1>Document Certification in the Ethereum Blockchain</h1>
+<h2> You can use this app to certified a files with a hash<br/> and find this unique hash in the blockchain </h2>
+
+<form>
+  <div class="input-file-container">
+      <input type="file" id="hashFile" class="input-file">
+      <label for="my-file" class="input-file-trigger" tabindex="0">Select a file...</label>
+  </div>
+  <p class="file-return"></p>
+</form>
+
+<div align="center" class='button-contenent'>
+  <button type='button' id="sendHashButton" (click)="send()" class="btn btn-primary">
+    Fingerprint to Blockchain
+  </button>
+
+  <button type='button' id= "findHashButton" (click)="find()" class="btn btn-secondary">
+    Find on Blockchain
+  </button>
+</div>
+<div class='response-text' align="center"><div id=responseText></div></div>
+
+<p class='txtcenter copy'>By <a href='https://www.bipinfo.com/'>BIP INFO - Digital System & Media</a><br/>
+  See also <a href='mailto:contact@bipinfo.com'>@BipInfo</a>
+</p>
